@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Aarjoo Jain</title>
+  <meta name="description" content="Get in touch with Aarjoo Jain for collaborations, PhD conversations or questions.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Aarjoo Jain<span>.</span></a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="research.html">Research</a></li>
+        <li><a href="about.html">CV & Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <p class="label">Contact</p>
+      <h1>Say hello.</h1>
+      <p>Open to collaborations, PhD conversations and questions about my work.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <ul>
+          <li><a href="mailto:aarjoo22@iisertvm.ac.in">aarjoo22@iisertvm.ac.in</a></li>
+          <li><a href="https://www.linkedin.com/in/aarjoo-jain" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/aarjoo22-lab" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li>EPFL, Switzerland (ISIC Master Grant)</li>
+        </ul>
+      </div>
+
+      <div class="contact-form">
+        <!-- FormSubmit.co: free, works without account after first email confirmation -->
+        <form action="https://formsubmit.co/aarjoo22@iisertvm.ac.in" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="How can I help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">
+          The first time someone submits, FormSubmit will send a confirmation email to aarjoo22@iisertvm.ac.in — just click the link once and future messages arrive automatically.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="about.html">CV & Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/aarjoo-jain" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/aarjoo22-lab" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <p>© 2026 Aarjoo Jain</p>
+  </footer>
+</body>
+</html>
